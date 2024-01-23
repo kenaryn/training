@@ -1,0 +1,32 @@
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section#global-container {
+  display: flex;
+}
+
+section#header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section#header article {
+  padding: 0.4rem 1.5rem;
+}
+
+section#header article {
+  display: flex;
+}
+
+section#header article > header {
+  display: flex;
+}
+
+section#primary-content {
+  display: flex;
+}

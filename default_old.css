@@ -1,0 +1,89 @@
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section#global-container {
+  display: flex;
+}
+
+section#header {
+  display: flex;
+}
+
+section#primary-content {
+  display: flex;
+}
+
+section#primary-content article {
+  flex: 1 600px;
+}
+
+section#primary-content article:last-child {
+  /* shortcut property for `flex-grow flex-shrink flex-basis` */
+  /* flex: 3 600px; */
+}
+
+section#header > article img {
+  /* float: left; */
+}
+
+/* section#header {
+  display: flex;
+  flex-flow: row wrap;
+}  */
+
+/* article#support-tickets > header {
+  width: 50%;
+  height: 3vh;
+}
+
+section#header article {
+  display: flex;
+  flex-flow: row;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.4rem;
+  justify-content: space-between;
+} */
+
+/* img.go-to {
+  max-width: 3%;
+} */
+
+footer#global-footer p {
+  text-align: center;
+}
+
+/* #admin-nav-panel {
+  display: flex;
+  flex-flow: row;
+} */
+
+main img {
+  max-width: 60%;
+  max-height: 30%;
+}
+
+/* figure {
+  border: thin #c0c0c0 solid;
+  max-width: 60%;
+  display: flex;
+  /* flex-flow: column;
+  padding: 0.5rem;
+} */
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/* aside#notification-panel {
+  display: flex;
+  flex-flow: column;
+} */
