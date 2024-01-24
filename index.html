@@ -34,69 +34,70 @@
     <h3>Dashboard</h3>
     <section id="header">
 
-      <article id="comments">
+      <article id="comments" class="rubric">
         <header>
           <div>
             <img src="./design/comments.png" alt="Tasks">
           </div>
           <div>
-            <p>26</p>
+            <p class="big-digit">26</p>
             <h4>News comments!</h4>
           </div>
         </header>
         <div class="view-details">
-          <p><a href="#">View details</a></p>
-          <img src="./design/encircled_right_arrow.png" alt="Go to" class="go-to">
+          <a href="#">View details</a>
+          <a href="#"><img src="./design/encircled_right_arrow.png" alt="Go to" title="Go to 'Comments' details" class="go-to"></a>
         </div>
       </article>
-      
-      <article id="tasks">
+
+      <article id="comments" class="rubric">
         <header>
           <div>
             <img src="./design/tasks.png" alt="Tasks">
           </div>
           <div>
-            <p>26</p>
+            <p class="big-digit">11</p>
             <h4>News comments!</h4>
           </div>
         </header>
         <div class="view-details">
-          <p><a href="#">View details</a></p>
-          <img src="./design/encircled_right_arrow.png" alt="Go to" class="go-to">
+          <a href="#">View details</a>
+          <a href="#"><img src="./design/encircled_right_arrow.png" alt="Go to" title="Go to 'Comments' details" class="go-to"></a>
         </div>
       </article>
       
-      <article id="offers">
+      <article id="comments" class="rubric">
         <header>
           <div>
             <img src="./design/offers.png" alt="Tasks">
           </div>
           <div>
-            <p>26</p>
+            <p class="big-digit">411</p>
             <h4>News comments!</h4>
           </div>
         </header>
         <div class="view-details">
-          <p><a href="#">View details</a></p>
-          <img src="./design/encircled_right_arrow.png" alt="Go to" class="go-to">
+          <a href="#">View details</a>
+          <a href="#"><img src="./design/encircled_right_arrow.png" alt="Go to" title="Go to 'Comments' details" class="go-to"></a>
         </div>
       </article>
 
-      <article id="support_tickets">
+      <article id="comments" class="rubric">
         <header>
           <div>
-            <img src="./design/support_tickets.png" alt="Tasks">
+            <img src="./design/comments.png" alt="Tasks">
           </div>
           <div>
-            <p>26</p>
+            <p class="big-digit">9</p>
             <h4>News comments!</h4>
           </div>
         </header>
         <div class="view-details">
-          <p><a href="#">View details</a></p>
-          <img src="./design/encircled_right_arrow.png" alt="Go to" class="go-to">
+          <a href="#">View details</a>
+          <a href="#"><img src="./design/encircled_right_arrow.png" alt="Go to" title="Go to 'Comments' details" class="go-to"></a>
         </div>
       </article>
+
     </section>
 
     <section id="primary-content">
@@ -106,49 +107,80 @@
             <h3>Area chart example</h3>
           </header>
           <figure>
-            <img src="./design/area_chart.png" alt="Area chart">
-            <!-- <figcaption>Usage's growth of internet protocols</figcaption> -->
+            <img src="./design/area_chart.png" alt="Area chart" title="Main area chart">
+            <figcaption>Usage's growth of internet protocols</figcaption>
           </figure>
         </article>
 
         <article id="bar-chart">
           <header>
             <h3>Bar chart example</h3>
+            <!-- add icon to the left and dropdown list to the right -->
           </header>
-          <table>
-            <th>Date</th>
-            <!-- Insert a html table example -->
-          </table>    
+          <div class="bar-chart-subparts">
+            <div>
+              <table>
+                <colgroup>
+                  <col class="col-group">
+                  <col span="3">
+                <tr>
+                  <th>#</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>3326</td>
+                  <td>10/21/2023</td>
+                  <td>3:29 PM</td>
+                  <td>321$</td>
+                </tr>
+                <tr>
+                  <td>3325</td>
+                  <td>10/22/2023</td>
+                  <td>4:11 AM</td>
+                  <td>309$</td>
+                </tr>
+              </table>    
+            </div>
+            <div>
+              <img src="./design/bar_chart.jpg" alt="Bar chart" title="Meat consumption">
+            </div>
+          </div>
         </article>
       </section>
+
       <section id="auxilliary-content">
         <article>
-        <header>
-          <h4>Notification panel</h4>
-        </header>
-        <ul>
-          <li><a href="#">New comments</a></li>
-          <li><a href="#">3 new followers</a></li>
-          <li><a href="#">Message sent</a></li>
-          <li><a href="#">New task</a></li>
-          <li><a href="#">Server rebooted</a></li>
-          <li><a href="#">Server crashed!</a></li>
-          <li><a href="#">Server not responding</a></li>
-          <li><a href="#">New order placed</a></li>
-          <li><a href="#">Payment received</a></li>
-        </ul>
-        <button>View all alerts</button>
-      </article>
+          <header>
+            <h4>Notification panel</h4>
+          </header>
+          <ul>
+            <li><a href="#">New comments</a></li>
+            <li><a href="#">3 new followers</a></li>
+            <li><a href="#">Message sent</a></li>
+            <li><a href="#">New task</a></li>
+            <li><a href="#">Server rebooted</a></li>
+            <li><a href="#">Server crashed!</a></li>
+            <li><a href="#">Server not responding</a></li>
+            <li><a href="#">New order placed</a></li>
+            <li><a href="#">Payment received</a></li>
+          </ul>
+          <form role="search">
+            <button class="view-alerts">View all alerts</button>
+          </form>
+        </article>
 
         <article id="donut-chart">
           <header>
             <h4>Donut chart example</h4>
           </header>
           <figure>
-            <img src="./design/donut_chart.png" alt="Donut chart" width="28%">
+            <img src="./design/donut_chart.png" alt="Donut chart" title="Auxilliary donut chart">
           </figure>
         </article>
       </section>
+
     </section>
   </main>
 </section>
